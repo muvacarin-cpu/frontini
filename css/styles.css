@@ -235,10 +235,9 @@ img {
   font-weight: 700;
   font-size: 0.9rem;
   color: var(--text-main);
-  background: linear-gradient(135deg, var(--primary) 0%, #ff3c00 100%);
+  background: var(--primary);
   padding: 10px 22px;
   border-radius: 30px;
-  box-shadow: 0 4px 15px rgba(255, 90, 0, 0.3);
   transition: var(--transition);
   display: flex;
   align-items: center;
@@ -246,9 +245,7 @@ img {
 }
 
 .nav-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 90, 0, 0.5);
-  background: linear-gradient(135deg, var(--primary-hover) 0%, #ff4c12 100%);
+  background: var(--primary-hover);
 }
 
 .hamburger {
@@ -394,15 +391,13 @@ img {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary) 0%, #ff3c00 100%);
+  background: var(--primary);
   color: var(--text-main);
-  box-shadow: 0 8px 25px rgba(255, 90, 0, 0.35);
   border: none;
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(255, 90, 0, 0.55);
+  background: var(--primary-hover);
 }
 
 .btn-secondary {
@@ -987,7 +982,6 @@ img {
 .newsletter-btn:hover {
   background: var(--primary);
   color: var(--text-main);
-  box-shadow: 0 5px 15px var(--primary-glow);
 }
 
 /* ==========================================
@@ -1050,7 +1044,7 @@ img {
 .imc-btn {
   width: 100%;
   border: none;
-  background: linear-gradient(135deg, var(--primary) 0%, #ff3c00 100%);
+  background: var(--primary);
   color: var(--text-main);
   font-family: var(--font-title);
   font-weight: 700;
@@ -1059,12 +1053,10 @@ img {
   border-radius: 12px;
   cursor: pointer;
   transition: var(--transition);
-  box-shadow: 0 5px 15px rgba(255, 90, 0, 0.25);
 }
 
 .imc-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 90, 0, 0.45);
+  background: var(--primary-hover);
 }
 
 .imc-result {
