@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Frontini Sports Academia | A melhor rede de academias de Catanduva, SP. Conheça nossas Unidades no Parque Glória e Residencial Isabela, e receba novidades da nova Unidade 3 em construção! Aparelhos novos, musculação, personal trainer e treinos funcionais." />
+  <title>Frontini Sports Academia | Catanduva - SP</title>
+  <link rel="icon" type="image/png" href="images/logo-frontini.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================
+       ENTRADA / INTRO COM VÍDEO DE FUNDO
+       ========================================== -->
+  <section class="hero-intro" id="hero-intro">
+    <video
+      class="hero-intro-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="images/hero-video-poster.jpg"
+    >
+      <source src="videos/hero-academia.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-intro-overlay"></div>
+    <div class="hero-intro-content">
+      <img src="images/logo-frontini.png" alt="Frontini Training Academia" class="hero-intro-logo" />
+    </div>
+    <a href="#hero" class="hero-intro-scroll" aria-label="Rolar para baixo">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <!-- ==========================================
+       HEADER / NAVBAR
+       ========================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="images/logo-frontini.png" alt="Frontini Training Academia" class="nav-logo-img" />
+      </a>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#modalidades" class="nav-link">Modalidades</a></li>
+          <li><a href="#unidades" class="nav-link">Unidades</a></li>
+          <li><a href="#imc" class="nav-link">Calculadora IMC</a></li>
+          <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+          <li>
+            <a href="#contato" class="nav-cta">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              Fale Conosco
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay-grid"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          4.9 Google • A melhor de Catanduva
+        </div>
+        <h1 class="hero-title">
+          TREINE NA MELHOR<br/>
+          <span class="highlight text-gradient">ESTRUTURA</span>
+        </h1>
+        <p class="hero-subtitle">
+          Na Frontini Sports Academia oferecemos um ambiente de alto nível, equipamentos modernos e instrutores focados no seu desenvolvimento real.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contato" class="btn btn-primary">
+            Matricule-se Já
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#unidades" class="btn btn-secondary">Conhecer Unidades</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-val">4.9 ★</span>
+            <span class="stat-lbl">Classificação</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-val">+500</span>
+            <span class="stat-lbl">Alunos Ativos</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-val">3</span>
+            <span class="stat-lbl">Unidades</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="floating-badge badge-top-left">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          Saúde & Energia
+        </div>
+        <div class="floating-badge badge-bottom-right">
+          Alta Performance
+        </div>
+        <div class="visual-box">
+          <div class="visual-img-container">
+            <img src="images/hero-bg.png" alt="Ambiente da Frontini Sports Academia" class="visual-img" />
+          </div>
+          <div class="visual-text">
+            <h4>Seu Objetivo É a Nossa Meta</h4>
+            <p>Musculação avançada, treinos funcionais intensos e acompanhamento dedicado para elevar seus limites físicos todos os dias.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MODALIDADES (GRID MINIMALISTA)
+       ========================================== -->
+  <section class="section" id="modalidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossas Modalidades</span>
+        <h2 class="section-title">O Treino Perfeito para <span class="highlight">Você</span></h2>
+        <p class="section-desc">Oferecemos programas de exercícios variados para se adaptarem aos seus objetivos e nível de condicionamento.</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v4H6zM6 17h12v4H6z"/><path d="M10 7v10M14 7v10"/></svg>
+          </div>
+          <h3>Academia de Musculação</h3>
+          <p>Equipamentos biomecânicos modernos para ganho de força, hipertrofia muscular e tonificação com máxima segurança.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Treino Funcional</h3>
+          <p>Exercícios integrados focados em força, estabilidade abdominal, agilidade e condicionamento físico para o dia a dia.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Personal Trainer</h3>
+          <p>Acompanhamento individualizado e treinos 100% planejados e adaptados para o seu progresso rápido e eficaz.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Exercícios Aeróbicos</h3>
+          <p>Aulas dinâmicas e infraestrutura completa para acelerar seu gasto calórico, queima de gordura e capacidade cardiovascular.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 10c-3.86 0-7 2-7 4.5S8.14 19 12 19s7-2 7-4.5-3.14-4.5-7-4.5z"/><path d="M12 2v8M5 13.5A7.5 7.5 0 0 1 12 5a7.5 7.5 0 0 1 7 8.5"/></svg>
+          </div>
+          <h3>Academia para Mulheres</h3>
+          <p>Um ambiente receptivo e treinos planejados especificamente para atender as metas de condicionamento e estética feminina.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+          </div>
+          <h3>Aulas Especiais</h3>
+          <p>Programas dinâmicos incluindo aulas estruturadas para gestantes, jovens, alongamentos e reabilitação física.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       UNIDADES (SELETOR DE ABAS DINÂMICO)
+       ========================================== -->
+  <section class="section" id="unidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossas Unidades</span>
+        <h2 class="section-title">Escolha Onde <span class="highlight">Treinar</span></h2>
+        <p class="section-desc">Selecione uma das nossas unidades em Catanduva para ver detalhes de contato, horários de funcionamento e localização.</p>
+      </div>
+
+      <div class="unidades-container">
+        <!-- Navegação das Abas -->
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-tab="unidade1">
+            Unidade 1 (Parque Glória)
+          </button>
+          <button class="tab-btn" data-tab="unidade2">
+            Unidade 2 (Res. Isabela)
+          </button>
+          <button class="tab-btn" data-tab="unidade3">
+            Unidade 3 (Obras & Novidades)
+          </button>
+        </div>
+
+        <!-- Conteúdo: Unidade 1 -->
+        <div class="tab-content active" id="tab-unidade1">
+          <div class="unit-grid">
+            <div class="unit-info-card">
+              <div class="unit-title-row">
+                <h3 class="unit-title">Unidade 1</h3>
+                <span class="unit-status-badge">Aberta</span>
+              </div>
+              <div class="unit-details-list">
+                <div class="unit-detail-item">
+                  <div class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div class="detail-text">
+                    <h5>Endereço</h5>
+                    <p>Av. Palmares, 3241 - Parque Glória, Catanduva - SP, 15801-446</p>
+                  </div>
+                </div>
+                
+                <div class="unit-detail-item">
+                  <div class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  </div>
+                  <div class="detail-text">
+                    <h5>Horário de Funcionamento</h5>
+                    <p>Segunda a Sexta: 05h às 21h<br/>Sábados: 09h às 15h<br/>Domingos e Feriados: 09h às 12h</p>
+                  </div>
+                </div>
+
+                <div class="unit-detail-item">
+                  <div class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 7.49 7.49l.99-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div class="detail-text">
+                    <h5>Contato & WhatsApp</h5>
+                    <p>(17) 99635-9139</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="google-rating-snippet">
+                <span class="rating-score">4.9</span>
+                <span class="rating-stars-gold">★★★★★</span>
+                <span class="rating-reviews-count">(12 Avaliações Google)</span>
+              </div>
+            </div>
+            
+            <div class="unit-visual-container">
+              <!-- Google Maps Iframe para Unidade 1 -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.6669971842857!2d-48.971597525381865!3d-21.41285228525048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be3deec1cf4e33%3A0xe4a40f1a9bfa9c3!2sAv.%20Palmares%2C%203241%20-%20Parque%20Gloria%2C%20Catanduva%20-%20SP%2C%2015801-446!5e0!3m2!1spt-BR!2sbr!4v1712610000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteúdo: Unidade 2 -->
+        <div class="tab-content" id="tab-unidade2" style="display: none;">
+          <div class="unit-grid">
+            <div class="unit-info-card">
+              <div class="unit-title-row">
+                <h3 class="unit-title">Unidade 2</h3>
+                <span class="unit-status-badge">Aberta</span>
+              </div>
+              <div class="unit-details-list">
+                <div class="unit-detail-item">
+                  <div class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div class="detail-text">
+                    <h5>Endereço</h5>
+                    <p>R. Riacho Fundo, 275 - Residencial Isabela, Catanduva - SP, 15801-446</p>
+                  </div>
+                </div>
+                
+                <div class="unit-detail-item">
+                  <div class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  </div>
+                  <div class="detail-text">
+                    <h5>Horário de Funcionamento</h5>
+                    <p>Segunda a Sexta: 05h às 21h<br/>Sábados: 09h às 15h<br/>Domingos e Feriados: Fechado</p>
+                  </div>
+                </div>
+
+                <div class="unit-detail-item">
+                  <div class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 7.49 7.49l.99-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div class="detail-text">
+                    <h5>Contato & WhatsApp</h5>
+                    <p>(17) 99635-9139</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="google-rating-snippet">
+                <span class="rating-score">4.9</span>
+                <span class="rating-stars-gold">★★★★★</span>
+                <span class="rating-reviews-count">(+10 Avaliações Google)</span>
+              </div>
+            </div>
+            
+            <div class="unit-visual-container">
+              <!-- Google Maps Iframe para Unidade 2 -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.902996924845!2d-48.9691888253823!3d-21.405852285255475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be3df9119c8dff%3A0xcd50a09cdbb22bb0!2sR.%20Riacho%20Fundo%2C%20275%20-%20Res.%20Isabela%2C%20Catanduva%20-%20SP%2C%2015801-446!5e0!3m2!1spt-BR!2sbr!4v1712610100000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteúdo: Unidade 3 (Em Construção) -->
+        <div class="tab-content" id="tab-unidade3" style="display: none;">
+          <div class="construction-card">
+            <div class="construction-icon-wrapper">
+              <div class="construction-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div class="spinning-gear">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+              </div>
+            </div>
+            <h3>Nova Unidade 3</h3>
+            <p>Estamos construindo uma infraestrutura fantástica, ainda mais ampla e repleta de novos aparelhos de alta performance para impulsionar seus treinos! Prepare-se para a experiência definitiva.</p>
+            
+            <div style="text-align: left; margin-bottom: 10px; font-family: var(--font-title); font-size: 0.85rem; font-weight: 700; color: var(--primary);">
+              ESTÁGIO DAS OBRAS: 45% CONCLUÍDO
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill"></div>
+            </div>
+
+            <p style="font-size: 0.85rem; margin-bottom: 16px;">Quer receber novidades exclusivas da obra e ser avisado na inauguração da Unidade 3?</p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" class="newsletter-input" placeholder="Seu melhor e-mail" required />
+              <button type="submit" class="newsletter-btn">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       IMC CALCULATOR SECTION
+       ========================================== -->
+  <section class="section" id="imc">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Saúde & Bem-Estar</span>
+        <h2 class="section-title">Calcule seu <span class="highlight">IMC</span></h2>
+        <p class="section-desc">Descubra seu Índice de Massa Corporal e veja a classificação recomendada para guiar o seu plano de treinos na Frontini Sports.</p>
+      </div>
+
+      <div class="imc-grid">
+        <div class="imc-calculator-card">
+          <form id="imc-form">
+            <div class="imc-inputs">
+              <div class="imc-field">
+                <label for="imc-weight">Peso (kg)</label>
+                <input type="text" id="imc-weight" placeholder="Ex: 75.5" required />
+              </div>
+              <div class="imc-field">
+                <label for="imc-height">Altura (m)</label>
+                <input type="text" id="imc-height" placeholder="Ex: 1.78" required />
+              </div>
+            </div>
+            <button type="submit" class="imc-btn">Calcular IMC</button>
+          </form>
+
+          <!-- Bloco de Resultado (revelado via JS) -->
+          <div class="imc-result" id="imc-result">
+            <div class="result-val">
+              <span class="result-number" id="result-number">23.8</span>
+              <span class="result-label" id="result-label">Peso Saudável</span>
+            </div>
+            <p class="result-text" id="result-text">
+              Excelente! Seu peso está na faixa recomendada. Continue com treinos de musculação na Frontini Sports para fortalecer as articulações e acelerar o metabolismo.
+            </p>
+          </div>
+        </div>
+
+        <div class="imc-info-list">
+          <div class="imc-info-item">
+            <div class="imc-info-bullet"></div>
+            <div class="imc-info-text">
+              <h4>O que é IMC?</h4>
+              <p>O Índice de Massa Corporal é uma métrica adotada pela Organização Mundial da Saúde (OMS) para classificar o peso corporal em relação à altura.</p>
+            </div>
+          </div>
+
+          <div class="imc-info-item">
+            <div class="imc-info-bullet"></div>
+            <div class="imc-info-text">
+              <h4>Musculação e Composição Corporal</h4>
+              <p>O IMC não diferencia massa gorda de massa muscular. Ganhar músculos na musculação eleva seu peso saudável e melhora muito sua disposição e aparência física.</p>
+            </div>
+          </div>
+
+          <div class="imc-info-item">
+            <div class="imc-info-bullet"></div>
+            <div class="imc-info-text">
+              <h4>Apoio Especializado</h4>
+              <p>Na Frontini Sports Academia, todos os treinos são desenhados individualmente por instrutores dedicados para te ajudar a atingir seu peso ideal de forma saudável.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DEPOIMENTOS (AVALIAÇÕES REAIS GOOGLE)
+       ========================================== -->
+  <section class="section" id="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="section-title">Quem Treina, <span class="highlight">Recomenda</span></h2>
+        <p class="section-desc">Veja a opinião dos nossos alunos reais sobre o espaço, instrutores e equipamentos das nossas unidades.</p>
+      </div>
+
+      <div class="testimonials-row">
+        <div class="rating-summary-card">
+          <div class="rating-big-num">4.9</div>
+          <div class="rating-stars-row">★★★★★</div>
+          <div class="rating-subtitle">Pontuação baseada em avaliações do Google Maps</div>
+          
+          <div class="rating-bars-list">
+            <div class="bar-row">
+              <span>5★</span>
+              <div class="bar-track"><div class="bar-fill-orange" style="width: 92%;"></div></div>
+              <span>92%</span>
+            </div>
+            <div class="bar-row">
+              <span>4★</span>
+              <div class="bar-track"><div class="bar-fill-orange" style="width: 6%;"></div></div>
+              <span>6%</span>
+            </div>
+            <div class="bar-row">
+              <span>3★</span>
+              <div class="bar-track"><div class="bar-fill-orange" style="width: 2%;"></div></div>
+              <span>2%</span>
+            </div>
+            <div class="bar-row">
+              <span>2★</span>
+              <div class="bar-track"><div class="bar-fill-orange" style="width: 0%;"></div></div>
+              <span>0%</span>
+            </div>
+            <div class="bar-row">
+              <span>1★</span>
+              <div class="bar-track"><div class="bar-fill-orange" style="width: 0%;"></div></div>
+              <span>0%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-display-box">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="avatar-circle">RB</div>
+              <div class="author-info">
+                <h4>Red Braz</h4>
+                <p>Local Guide • Avaliação do Google</p>
+              </div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+            <p class="testimonial-text">
+              "Excelente infraestrutura, aparelhos novos e de qualidade. O ambiente é muito limpo e bem arejado, ideal para treinar com segurança e ótimos professores disponíveis."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FALE CONOSCO / CONTATO
+       ========================================== -->
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-info-side">
+          <h2>Pronto para dar o<br/><span class="highlight">Próximo Passo</span>?</h2>
+          <p>Envie-nos uma mensagem pelo formulário. Você será redirecionado para o nosso WhatsApp, onde poderá agendar sua primeira visita ou tirar qualquer dúvida!</p>
+          
+          <div class="contact-methods">
+            <div class="method-card">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <div class="method-details">
+                <h4>WhatsApp Direto</h4>
+                <p>(17) 99635-9139</p>
+              </div>
+            </div>
+
+            <div class="method-card">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+              </div>
+              <div class="method-details">
+                <h4>Instagram Oficial</h4>
+                <p>@frontinisportsacademia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-side">
+          <h3 class="form-title">Envie uma Mensagem</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Seu Nome</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Digite seu nome completo" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Sua Mensagem</label>
+              <textarea id="contact-message" class="form-control" placeholder="Gostaria de saber mais sobre os planos e horários..." required></textarea>
+            </div>
+            <button type="submit" class="imc-btn">Enviar via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <a href="#" class="footer-logo">
+            <img src="images/logo-frontini.png" alt="Frontini Training Academia" class="footer-logo-img" />
+          </a>
+          <p class="footer-desc">
+            A melhor rede de academias de Catanduva, SP. Foco na saúde, energia e alta performance física de nossos alunos com equipamentos premium.
+          </p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://instagram.com/frontinisportsacademia" target="_blank" class="social-link" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+          </a>
+          <a href="https://wa.me/5517996359139" target="_blank" class="social-link" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2026 Frontini Sports Academia. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
