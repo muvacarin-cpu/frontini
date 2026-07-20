@@ -176,18 +176,12 @@ img {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: var(--font-title);
-  font-weight: 900;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px;
 }
 
 .nav-logo-img {
-  width: 36px;
-  height: 36px;
+  height: 42px;
+  width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 0 8px var(--primary-glow));
 }
 
 .nav-logo span {
@@ -1465,17 +1459,12 @@ textarea.form-control {
 .footer-logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-family: var(--font-title);
-  font-weight: 900;
-  font-size: 1.5rem;
-  letter-spacing: -0.5px;
   margin-bottom: 12px;
 }
 
 .footer-logo-img {
-  width: 32px;
-  height: 32px;
+  height: 38px;
+  width: auto;
   object-fit: contain;
 }
 
