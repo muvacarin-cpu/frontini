@@ -178,4 +178,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ==========================================
+     GALERIA DE FOTOS DAS UNIDADES (LIGHTBOX)
+     ========================================== */
+  const lightbox = document.getElementById('gallery-lightbox');
+  const lightboxImg = document.getElementById('gallery-lightbox-img');
+  const lightboxClose = document.getElementById('gallery-lightbox-close');
+  const galleryItems = document.querySelectorAll('.unit-gallery-item');
+
+  galleryItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      const fullSrc = item.getAttribute('data-full');
+      const altText = item.querySelector('img').getAttribute('alt');
+      lightboxImg.setAttribute('src', fullSrc);
+      lightboxImg.setAttribute('alt', altText);
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    lightboxImg.setAttribute('src', '');
+  }
+
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+
+  if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
 });
