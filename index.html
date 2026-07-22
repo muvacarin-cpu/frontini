@@ -329,28 +329,25 @@
 
           <div class="unit-gallery">
             <h4 class="unit-gallery-title">Estrutura da Unidade 2</h4>
-            <div class="unit-gallery-grid">
-              <button class="unit-gallery-item" data-full="images/unidade2/foto1.jpeg">
-                <img src="images/unidade2/foto1.jpeg" alt="Área de musculação da Unidade 2 - aparelhos amarelos e pretos" loading="lazy" />
-              </button>
-              <button class="unit-gallery-item" data-full="images/unidade2/foto2.jpeg">
-                <img src="images/unidade2/foto2.jpeg" alt="Aparelhos de musculação da Unidade 2" loading="lazy" />
-              </button>
-              <button class="unit-gallery-item" data-full="images/unidade2/foto3.jpeg">
-                <img src="images/unidade2/foto3.jpeg" alt="Estação de musculação da Unidade 2" loading="lazy" />
-              </button>
-              <button class="unit-gallery-item" data-full="images/unidade2/foto4.jpeg">
-                <img src="images/unidade2/foto4.jpeg" alt="Área de treino livre da Unidade 2" loading="lazy" />
-              </button>
-              <button class="unit-gallery-item" data-full="images/unidade2/foto5.jpeg">
-                <img src="images/unidade2/foto5.jpeg" alt="Aparelhos de cabo da Unidade 2" loading="lazy" />
-              </button>
-              <button class="unit-gallery-item" data-full="images/unidade2/foto6.jpeg">
-                <img src="images/unidade2/foto6.jpeg" alt="Esteiras da área de cardio da Unidade 2" loading="lazy" />
-              </button>
-              <button class="unit-gallery-item" data-full="images/unidade2/foto7.jpeg">
-                <img src="images/unidade2/foto7.jpeg" alt="Visão geral do salão de musculação da Unidade 2" loading="lazy" />
-              </button>
+            <div class="unit-carousel" data-carousel>
+              <div class="unit-carousel-track">
+                <img class="unit-carousel-slide active" src="images/unidade2/foto1.jpeg" alt="Área de musculação da Unidade 2" />
+                <img class="unit-carousel-slide" src="images/unidade2/foto2.jpeg" alt="Aparelhos de musculação da Unidade 2" />
+                <img class="unit-carousel-slide" src="images/unidade2/foto3.jpeg" alt="Estação de musculação da Unidade 2" />
+                <img class="unit-carousel-slide" src="images/unidade2/foto4.jpeg" alt="Área de treino livre da Unidade 2" />
+                <img class="unit-carousel-slide" src="images/unidade2/foto5.jpeg" alt="Aparelhos de cabo da Unidade 2" />
+                <img class="unit-carousel-slide" src="images/unidade2/foto6.jpeg" alt="Esteiras da área de cardio da Unidade 2" />
+                <img class="unit-carousel-slide" src="images/unidade2/foto7.jpeg" alt="Visão geral do salão de musculação da Unidade 2" />
+              </div>
+              <div class="unit-carousel-dots">
+                <span class="unit-carousel-dot active"></span>
+                <span class="unit-carousel-dot"></span>
+                <span class="unit-carousel-dot"></span>
+                <span class="unit-carousel-dot"></span>
+                <span class="unit-carousel-dot"></span>
+                <span class="unit-carousel-dot"></span>
+                <span class="unit-carousel-dot"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -607,14 +604,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Lightbox de fotos das unidades -->
-  <div class="gallery-lightbox" id="gallery-lightbox">
-    <button class="gallery-lightbox-close" id="gallery-lightbox-close" aria-label="Fechar">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <img src="" alt="" id="gallery-lightbox-img" />
-  </div>
 
   <script src="js/app.js"></script>
 </body>

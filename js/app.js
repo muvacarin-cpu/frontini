@@ -179,40 +179,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================
-     GALERIA DE FOTOS DAS UNIDADES (LIGHTBOX)
+     CARROSSEL AUTOMÁTICO DE FOTOS DAS UNIDADES
      ========================================== */
-  const lightbox = document.getElementById('gallery-lightbox');
-  const lightboxImg = document.getElementById('gallery-lightbox-img');
-  const lightboxClose = document.getElementById('gallery-lightbox-close');
-  const galleryItems = document.querySelectorAll('.unit-gallery-item');
+  document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+    const slides = carousel.querySelectorAll('.unit-carousel-slide');
+    const dots = carousel.querySelectorAll('.unit-carousel-dot');
+    let current = 0;
 
-  galleryItems.forEach((item) => {
-    item.addEventListener('click', () => {
-      const fullSrc = item.getAttribute('data-full');
-      const altText = item.querySelector('img').getAttribute('alt');
-      lightboxImg.setAttribute('src', fullSrc);
-      lightboxImg.setAttribute('alt', altText);
-      lightbox.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    });
-  });
+    if (slides.length <= 1) return;
 
-  function closeLightbox() {
-    lightbox.classList.remove('open');
-    document.body.style.overflow = '';
-    lightboxImg.setAttribute('src', '');
-  }
+    function goToSlide(index) {
+      slides[current].classList.remove('active');
+      if (dots[current]) dots[current].classList.remove('active');
+      current = index;
+      slides[current].classList.add('active');
+      if (dots[current]) dots[current].classList.add('active');
+    }
 
-  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
-
-  if (lightbox) {
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) closeLightbox();
-    });
-  }
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeLightbox();
+    setInterval(() => {
+      const next = (current + 1) % slides.length;
+      goToSlide(next);
+    }, 3500);
   });
 
 });
