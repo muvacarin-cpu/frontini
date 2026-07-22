@@ -146,6 +146,97 @@ img {
 }
 
 /* ==========================================
+   SOBRE NÓS
+   ========================================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text .section-tag {
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+.about-text .section-title {
+  margin-bottom: 22px;
+}
+
+.about-text p {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-text strong {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.about-stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 26px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: var(--transition);
+}
+
+.about-stat-card:hover {
+  border-color: var(--border-glow);
+  transform: translateY(-4px);
+}
+
+.about-stat-num {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.15;
+}
+
+.about-stat-arrow {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.about-stat-lbl {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 980px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================
    ENTRADA / INTRO COM VÍDEO DE FUNDO
    ========================================== */
 .hero-intro {
