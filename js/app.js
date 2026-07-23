@@ -159,26 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================
-     CONTACT FORM & WHATSAPP REDIRECT
-     ========================================== */
-  const contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('contact-name').value;
-      const message = document.getElementById('contact-message').value;
-
-      // Base WhatsApp URL with Catanduva unit contact phone
-      const phone = '5517996359139';
-      const text = `Olá, meu nome é ${encodeURIComponent(name)}. Gostaria de mais informações sobre a academia: ${encodeURIComponent(message)}`;
-      const waUrl = `https://wa.me/${phone}?text=${text}`;
-
-      // Open in new tab
-      window.open(waUrl, '_blank');
-    });
-  }
-
-  /* ==========================================
      CARROSSEL AUTOMÁTICO DE FOTOS DAS UNIDADES
      ========================================== */
   document.querySelectorAll('[data-carousel]').forEach((carousel) => {
