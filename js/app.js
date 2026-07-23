@@ -72,21 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==========================================
-     NEWSLETTER FORM (UNIDADE 3)
-     ========================================== */
-  const newsletterForm = document.getElementById('newsletter-form');
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const emailInput = newsletterForm.querySelector('input');
-      if (emailInput && emailInput.value.trim() !== '') {
-        alert('Obrigado! Seu e-mail foi cadastrado. Você receberá atualizações sobre as obras e a inauguração da Unidade 3!');
-        emailInput.value = '';
-      }
-    });
-  }
-
-  /* ==========================================
      CARROSSEL AUTOMÁTICO DE FOTOS DAS UNIDADES
      ========================================== */
   document.querySelectorAll('[data-carousel]').forEach((carousel) => {
